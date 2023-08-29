@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Code formatier</title>
+    <meta name="description" content="Page description goes here.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/ace-builds@1.4.12/src/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.13.5/beautify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.0/beautify-html.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.0/beautify-css.min.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="devvAreaformatierHeader">
+        <div class="DevvarenaLogo">Devv Arena</div>
+        <h2>Html/Css/Js UnMinifier</h2>
+    </header>
+    <div class="formatierNavigation">
+        <div class="formatOption"> <button class="runHtmlformat" id="changeSection">Html</button>
+            <button class="runCssformat" id="changeSection">Css</button>
+            <button class="runJsformat" id="changeSection">JS</button>
+        </div>
+        <button class="runformat">Unminify ▶</button>
+    </div>
+    <main class="mainformatierSection">
+        <section class="InputformatSection"> <span class="notifyformat">Unminify</span>
+            <div id="htmlformatEditor" class="sectionTog"></div>
+            <div id="cssformatEditor" class="sectionTog"></div>
+            <div id="jsformatEditor" class="sectionTog"></div>
+        </section>
+        <section class="OutputformatSection"> <span class="Outputnotify">Output</span>
+            <textarea id="Outputformatdiv" spellcheck="false"></textarea>
+            <div class="copiedformatText">Copied !</div> <button class="copiedformatButton">Copy Unminify Code</button>
+        </section>
+    </main>
+    <script src="/script.js"></script>
+</body>
+
+</html>
