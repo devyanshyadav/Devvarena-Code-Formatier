@@ -187,7 +187,6 @@
   }
 
 
-
   .DevvarenaLogo {
     display: flex;
     align-items: center;
@@ -200,10 +199,17 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 400;
+    user-select: none;
 }
 .DevvarenaLogo img {
     width: 30px;
 }
+.DevvarenaLogo:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
   @media(max-width:700px) {
       .mainformatierSection {
           flex-direction: column;
